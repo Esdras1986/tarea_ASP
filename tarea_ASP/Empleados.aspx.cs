@@ -1,5 +1,6 @@
 ﻿
 using System;
+using Modelo;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,7 +21,10 @@ namespace tarea_ASP
 
         protected void btn_crear_Click(object sender, EventArgs e)
         {
-            
+             
+            ConexionBD cn = new ConexionBD ();
+            cn.Abrirconexion();
+            cn.CerrarConexion();
         }
     }
 }
